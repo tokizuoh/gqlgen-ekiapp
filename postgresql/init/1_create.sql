@@ -12,7 +12,7 @@ create table company
     e_sort integer,
     PRIMARY KEY (company_cd)
 );
-comment on table company is 'company20200309.csv';
+comment on table company is 'company20230105.csv';
 
 create table line
 (
@@ -31,7 +31,7 @@ create table line
     e_sort integer,
     PRIMARY KEY (line_cd)
 );
-comment on table line is 'line20200306free.csv';
+comment on table line is 'line20230320free.csv';
 
 create table station
 (
@@ -52,7 +52,7 @@ create table station
     e_sort integer,
     PRIMARY KEY (station_cd)
 );
-comment on table station is 'station20200316free.csv';
+comment on table station is 'station20230320free.csv';
 
 create table station_join
 (
@@ -61,4 +61,4 @@ create table station_join
     station_cd2 integer not null,
     PRIMARY KEY (line_cd, station_cd1, station_cd2)
 );
-comment on table station_join is 'join20200306.csv';
+comment on table station_join is 'join20230320.csv';
